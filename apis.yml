@@ -1,7 +1,16 @@
 aid: meal-ticket
 name: Meal Ticket
-description: Meal Ticket is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Meal Ticket is a Boise, Idaho-based SaaS company (founded 2011) delivering
+  profitability management software for the foodservice supply chain. Its
+  TrackMax+ platform helps food distributors and suppliers manage rebates,
+  allowances, trade programs, payments, and operator-level intelligence at
+  line-item detail, while its MarketMan platform provides AI-powered inventory
+  and food-cost management to 15,000+ restaurant locations across 55+ countries.
+  Meal Ticket serves 100+ distributors and suppliers and processes $40B+ in
+  annual sales and rebate volume. The company operates as a customer-facing
+  SaaS with a single-sign-on login surface (OpenID Connect) but does not
+  publish a public developer API, developer portal, or API documentation.
 url: https://raw.githubusercontent.com/api-evangelist/meal-ticket/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +18,31 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://cdn.prod.website-files.com/69bb9bea9c683b00952f085d/69bbbd9b487f6dacf569a385_main_logo.svg
 tags:
 - Company
+- Foodservice
+- Foodservice Distribution
+- Restaurants
+- Rebate Management
+- Profitability Management
+- Supply Chain
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +51,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://getmealticket.com/
+  url: https://www.mealticket.com/
+- type: Blog
+  url: https://www.mealticket.com/blog
+- type: Support
+  url: https://mealticket.my.site.com/helpcenter/s/
+- type: HelpCenter
+  url: https://mealticket.my.site.com/helpcenter/s/
+- type: Login
+  url: https://login.mealticket.com/
+- type: Demo
+  url: https://www.mealticket.com/get-a-demo
+- type: TermsOfService
+  url: https://www.mealticket.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.mealticket.com/privacy-policy
+- type: WellKnown
+  url: well-known/meal-ticket-well-known.yml
+- type: Authentication
+  url: authentication/meal-ticket-authentication.yml
+- type: DomainSecurity
+  url: security/meal-ticket-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
