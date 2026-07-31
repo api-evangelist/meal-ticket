@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: live probe of /.well-known/ on Meal Ticket hosts
+hosts:
+- host: https://login.mealticket.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: meal-ticket-openid-configuration.json
+  - path: /.well-known/jwks.json
+    status: 200
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://www.mealticket.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+notes: >-
+  login.mealticket.com publishes an OpenID Connect discovery document for the
+  Meal Ticket customer/SSO login. There is no public developer API, so no
+  api-catalog, ai-plugin, or llms.txt surface is present.

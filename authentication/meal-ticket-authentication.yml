@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://login.mealticket.com/.well-known/openid-configuration
+summary:
+  types: [openIdConnect]
+  surface: customer-login-sso
+  note: >-
+    Meal Ticket exposes an OpenID Connect provider for its customer / product
+    login (login.mealticket.com). No public developer API or API-key/OAuth
+    developer program is documented, so this profile captures the identity/SSO
+    surface only.
+schemes:
+- name: OpenIDConnect
+  type: openIdConnect
+  openIdConnectUrl: https://login.mealticket.com/.well-known/openid-configuration
+  issuer: https://login.mealticket.com/
+  authorization_endpoint: https://login.mealticket.com/authorize
+  token_endpoint: https://login.mealticket.com/auth/token
+  jwks_uri: https://login.mealticket.com/.well-known/jwks.json
+  response_types: [code]
+  id_token_signing_alg: [RS256]
+  scopes: [openid, email]
+  sources: [well-known/meal-ticket-openid-configuration.json]
