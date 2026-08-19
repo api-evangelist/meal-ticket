@@ -30,7 +30,7 @@ accessModel:
   - authentication
   generated: '2026-07-22'
   method: derived
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 image: https://cdn.prod.website-files.com/69bb9bea9c683b00952f085d/69bbbd9b487f6dacf569a385_main_logo.svg
